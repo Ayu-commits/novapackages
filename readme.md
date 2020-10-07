@@ -9,13 +9,13 @@
 
 1. Make a new Algolia app
 2. Put its key and ID into your `.env`
-3. `php artisan scout:import "App\Package"`
+3. `PHP artisan scout: import "App\Package"`
 
 ## Setting up GitHub Authentication
 
 1. Make a new [GitHub OAuth application](https://github.com/settings/tokens)
 2. Set `http://novapackages.test/login/github/callback` as the Authorized Callback URL
-3. Copy the GitHub app id and secret to `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` in the `.env` file.
+3. Copy the GitHub app id and the secret to `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` in the `.env` file.
 
 ## Setting up Slack Test Webhook
 
@@ -25,11 +25,11 @@
 
 ## Setting up the Filesystem for Screenshots
 
-1. Run `php artisan storage:link`
+1. Run `PHP artisan storage: link`
 
 ## Testing
 
-The tests in `tests/Feature/RepoTest.php` provide coverage for the readme import feature. These tests depend on an active Internet connection and will run by default. For convenience, they have been added to the `integration` group. If you would like to exlude these tests from running, you may do so by using phpunit's `--exclude-group` option 
+The tests in `tests/Feature/RepoTest.php` provide coverage for the readme import feature. These tests depend on an active Internet connection and will run by default. For convenience, they have been added to the `integration` group. If you would like to exclude these tests from running, you may do so by using PHPUnit's `--exclude-group` option 
 
 
 ```
